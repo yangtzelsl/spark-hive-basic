@@ -22,8 +22,8 @@ object SparkSessionApp {
     println("show databases")
     showDatabases.show
 
-    val useDatabase = sparkSession.sql("use amber_app_dwd")
-    println("use amber_app_dwd")
+    val useDatabase = sparkSession.sql("use _app_dwd")
+    println("use _app_dwd")
     useDatabase.show()
 
     val showTables = sparkSession.sql("show tables")
